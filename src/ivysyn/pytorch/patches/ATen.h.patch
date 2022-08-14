@@ -1,0 +1,8 @@
+--- /home/neo/ivysyn/src/pytorch/aten/src/ATen/ATen.h	2022-05-20 14:15:08.643331288 -0400
++++ /media/ivysyn/pytorch/aten/src/ATen/ATen.h	2022-04-14 11:47:30.003134369 -0400
+@@ -32,3 +32,5 @@
+ #include <ATen/core/ivalue.h>
+ #include <ATen/core/jit_type.h>
+ #include <c10/core/InferenceMode.h>
++
++#include <ATen/core/fuzzing.h>
