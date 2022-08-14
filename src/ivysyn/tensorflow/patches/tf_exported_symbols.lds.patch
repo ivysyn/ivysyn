@@ -1,0 +1,7 @@
+--- /home/neo/ivysyn/src/tensorflow/tensorflow/tf_exported_symbols.lds	2022-05-20 10:29:21.084907225 -0400
++++ tf_exported_symbols.lds	2022-04-14 11:51:57.230531643 -0400
+@@ -12,3 +12,4 @@
+ *PyInit_*
+ *SE_*
+ *SP_*
++*tffuzzing*

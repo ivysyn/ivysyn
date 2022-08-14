@@ -1,0 +1,10 @@
+--- /home/neo/ivysyn/src/tensorflow/tensorflow/tf_version_script.lds	2022-05-20 10:29:21.084907225 -0400
++++ tf_version_script.lds	2022-04-14 11:51:57.230531643 -0400
+@@ -14,6 +14,7 @@ tensorflow {
+     *PyInit_*;
+     *SE_*;
+     *SP_*;
++    *tffuzzing*;
+   local:
+     *;
+ };

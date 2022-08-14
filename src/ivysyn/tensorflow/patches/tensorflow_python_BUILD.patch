@@ -1,0 +1,10 @@
+--- /home/neo/ivysyn/src/tensorflow/tensorflow/python/BUILD	2022-05-20 10:29:49.277064079 -0400
++++ BUILD	2022-04-14 11:51:56.278519422 -0400
+@@ -3163,6 +3163,7 @@ pywrap_tensorflow_macro(
+         "//tensorflow/core/grappler/graph_analyzer:graph_analyzer_tool",
+         "//tensorflow/core/grappler/optimizers:meta_optimizer",
+         "//tensorflow/core:lib",
++        "//tensorflow/core/framework:tffuzzing",
+         "//tensorflow/core:reader_base",
+         "//tensorflow/core/kernels:data_service_ops",
+         "//tensorflow/core/debug",

@@ -1,0 +1,8 @@
+# MatrixSetDiagOp
+
+import tensorflow as tf
+
+input = tf.constant([], shape=[0,0], dtype=tf.complex128)
+diagonal = tf.constant([], shape=[0], dtype=tf.complex128)
+k = tf.constant(0, shape=[], dtype=tf.int32)
+tf.raw_ops.MatrixSetDiagV2(input=input, diagonal=diagonal, k=k)

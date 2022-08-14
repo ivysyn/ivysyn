@@ -1,0 +1,10 @@
+--- /home/ivyusr/ivysyn/src/frameworks/tensorflow-2.6-ivysyn/.bazelrc	2022-06-06 19:02:26.889873351 -0400
++++ .bazelrc	2022-04-14 12:55:12.816206211 -0400
+@@ -602,6 +602,7 @@ build:asan --copt -g
+ build:asan --copt -O3
+ build:asan --copt -fno-omit-frame-pointer
+ build:asan --linkopt -fsanitize=address
++build:asan --linkopt -shared-libsan
+ 
+ # Memory sanitizer
+ # CC=clang bazel build --config msan

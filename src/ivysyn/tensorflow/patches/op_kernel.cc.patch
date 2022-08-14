@@ -1,0 +1,22 @@
+--- op_kernel.cc	2022-06-16 17:15:56.165072188 -0400
++++ /home/ivyusr/op_kernel.cc	2022-06-16 17:15:49.996999315 -0400
+@@ -22,6 +22,8 @@ limitations under the License.
+ #include <unordered_map>
+ #include <utility>
+ #include <vector>
++#include <fstream>
++#include <iostream>
+ 
+ #include "absl/base/call_once.h"
+ #include "absl/strings/match.h"
+@@ -1190,6 +1192,10 @@ void OpKernelRegistrar::InitInternal(con
+       Key(kernel_def->op(), DeviceType(kernel_def->device_type()),
+           kernel_def->label());
+ 
++  std::fstream file;
++  file.open("/home/ivyusr/ivysyn/src/ivysyn/tensorflow/raw_regs.txt", std::ios::app);
++  file << kernel_class_name << " ----- " << kernel_def->op() << std::endl;
++  file.close();
+   // To avoid calling LoadDynamicKernels DO NOT CALL GlobalKernelRegistryTyped
+   // here.
+   // InitInternal gets called by static initializers, so it ends up executing

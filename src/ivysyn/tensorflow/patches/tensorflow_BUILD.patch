@@ -1,0 +1,10 @@
+--- /home/neo/ivysyn/src/tensorflow/tensorflow/BUILD	2022-05-20 10:29:48.469059585 -0400
++++ BUILD	2022-05-20 13:50:23.551027533 -0400
+@@ -1023,6 +1023,7 @@ tf_cc_shared_object(
+         "//tensorflow/c/eager:c_api_experimental",
+         "//tensorflow/core:distributed_tensorflow_dependencies",
+         "//tensorflow/core:tensorflow",
++        "//tensorflow/core/framework:tffuzzing",
+     ],
+ )
+ 

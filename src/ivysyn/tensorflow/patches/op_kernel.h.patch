@@ -1,0 +1,11 @@
+--- /home/neo/ivysyn/src/tensorflow/tensorflow/core/framework/op_kernel.h	2022-05-20 10:29:48.841061653 -0400
++++ op_kernel.h	2022-04-14 11:51:58.478547663 -0400
+@@ -674,6 +674,8 @@ class OpKernelContext {
+ 
+   int64 step_id() const { return params_->step_id; }
+ 
++  Params* get_params() { return params_; }
++
+   const OpKernel& op_kernel() const { return *params_->op_kernel; }
+ 
+   // Stack trace of where the op was defined (if defined in eager mode).

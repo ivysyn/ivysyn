@@ -1,0 +1,9 @@
+src/frameworks/tensorflow-2.6-ivysyn/
+src/frameworks/pytorch-1.11-ivysyn/
+venv/**
+kernel_regs.txt
+.hypothesis/
+.tmpstate*
+.data*
+dispatches.txt
+function_names.txt
