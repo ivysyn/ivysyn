@@ -14,7 +14,7 @@
 
 # PyTorch
 
-## Installation steps for IvySyn version (CPU kernels only)
+## Installation steps for IvySyn version
 
 ### Install anaconda3
 Install under `/home/ivyusr/ivysyn/venv/anaconda3` (installer will ask for path). Install script already provided.
@@ -126,7 +126,7 @@ To run a PoV with the ASan-compiled PyTorch installation, first activate the con
 
 # TensorFlow
 
-## Installation steps for IvySyn version (CPU kernels only)
+## Installation steps for IvySyn version
 
 ### Download `bazel`
 
