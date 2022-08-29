@@ -1,7 +1,7 @@
 
 #pragma once
 
-#define IVYSYN_VALIDATE
+//#define IVYSYN_VALIDATE
 
 #include <algorithm>
 #include <array>
@@ -293,15 +293,6 @@ namespace fuzzing {
 
         std::vector<at::Tensor> extra_tensor_mutations;
         std::vector<at::IntArrayRef> extra_intarrayref_mutations;
-        std::vector<std::string> extra_func_names = {
-          "_grid_sampler_2d_cpu_fallback",
-          "thnn_conv2d",
-          "_saturate_weight_to_fp16",
-          "mkldnn_adaptive_avg_pool2d",
-          "ormqr",
-          "mkldnn_linear",
-          "_pad_packed_sequence",
-        };
 
         int get_next_mut_int();
         int64_t get_next_mut_long();

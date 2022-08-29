@@ -50,7 +50,7 @@ main()
 {
     apply_patches
     copy_files
-    # run_pass
+    run_pass
 }
 
 main

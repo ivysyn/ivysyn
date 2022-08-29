@@ -2136,11 +2136,7 @@ Fuzzer::Fuzzer(char *fname, std::vector<std::string> types_vec, std::vector<void
           cur_idx = 0;
           /* Total mutations will be decreased by next_mutations_indices, so set
            * it to zero_dim_mutations here */
-          if (std::find(extra_func_names.begin(), extra_func_names.end(), cur_fname) != extra_func_names.end()) {
-            total_mutations = zero_dim_mutations;
-          } else {
-            total_mutations = 0;
-          }
+          total_mutations = zero_dim_mutations;
           /* Call this to log the first mutations number (needs to be called
            * with main_pool_done = false) */
           next_mutations_indices(true);
