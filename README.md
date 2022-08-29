@@ -12,8 +12,8 @@ This script does the following:
 - Downloads PyTorch and TensorFlow and patches them to make them compatible to be run with IvySyn
 - Creates Python virtual environments required by IvySyn and installs the required packages, including the two DL frameworks
 
-    cd /home/ivyusr/ivysyn/src/ivysyn/scripts
-    bash ./prep-ivysyn.sh
+        cd /home/ivyusr/ivysyn/src/ivysyn/scripts
+        bash ./prep-ivysyn.sh
 
 # PyTorch
 
