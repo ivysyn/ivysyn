@@ -105,9 +105,9 @@ install_tensorflow()
 
     # Install TensorFlow
     pushd ${TENSORFLOW_BASE}
-    source "${VENV_BASE}tensorflow-2.6-orig/bin/activate"
+    source "${VENV_BASE}tensorflow-2.6-ivysyn/bin/activate"
     pip3 install -r ${IVYSYN_BASE}tensorflow-requirements.txt
-    PYTHON_BIN_PATH="${VENV_BASE}tensorflow-2.6-orig/bin/python3" USE_DEFAULT_PYTHON_LIB_PATH=1 \
+    PYTHON_BIN_PATH="${VENV_BASE}tensorflow-2.6-ivysyn/bin/python3" USE_DEFAULT_PYTHON_LIB_PATH=1 \
         TF_NEED_CUDA=0 TF_NEED_ROCM=0 TF_DOWNLOAD_CLANG=0 CC_OPT_FLAGS=0 TF_SET_ANDROID_WORKSPACE=0 \
         ./configure
     bazel build //tensorflow/tools/pip_package:build_pip_package --runs_per_test=10 --cache_test_results=no
